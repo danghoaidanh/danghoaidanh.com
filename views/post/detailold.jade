@@ -1,0 +1,9 @@
+extends ../layout
+
+block content
+
+	h1 #{post.title}
+	p.well #{post.teaser}
+	div !{post.content}
+	img(src="../../pictures/#{post.picture}")
+	img(src="../../pictures/#{post.picture1}")

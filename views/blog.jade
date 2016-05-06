@@ -1,0 +1,26 @@
+extends layout
+
+//include header
+block content
+    .row.row-content(style="margin: 5px 0 5px 0;")
+        .col-sm-12.col-xs-12
+            .row
+                .col-sm-2.col-xs-2
+                .col-sm-8.col-xs-8(style="background:#efe9e7; height:auto; border-radius:5px")
+                    - each post in posts
+                        .row.back-ground-white.margin-5-m10-5-m10
+                            .col-sm-12.padding-top-5.margin-bottom-m5
+                                a(href="#{ functions.urlPost(post) }")
+                                    p #{post.title}
+                            .col-sm-12
+                                .row.margin-bottom-5
+                                    .col-sm-3
+                                        a(href="pictures/#{post.picture}")
+                                            img.img-responsive.imagex.img-thumbnail(src="pictures/#{post.picture}")
+                                    .col-sm-9.no-left-right-margin
+                                        span #{post.teaser}
+                                        br
+                                        span.read-more: a(href="#{ functions.urlPost(post) }")   Read more...
+                                        br
+                                        span.date-style #{moment(post.time).format('LLLL')}
+                .col-sm-2.col-xs-2

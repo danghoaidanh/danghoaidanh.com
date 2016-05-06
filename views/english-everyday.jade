@@ -1,0 +1,13 @@
+extends layout
+
+//include header
+block content
+    .row.row-content(style="margin: 5px 0 5px 0;")
+        .col-sm-12.col-xs-12
+            .row
+                .col-sm-2.col-xs-2
+                .col-sm-8.col-xs-8(style="background:#efe9e7; height:auto; border-radius:5px")
+                    p #{moment(Date.now()).format('LLLL')}
+                    h2 Monday - Vocabulary
+                    img.img-responsive(src="images/voca-2-5-2016.png" style="width: 600px; height: 400px; text-align: center")
+                .col-sm-2.col-xs-2

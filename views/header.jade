@@ -1,0 +1,46 @@
+block header
+    .row.row-half-top
+        .col-sm-12.col-xs-12.top-half-header
+            .row
+                .col-sm-2.col-xs-2
+                .col-sm-2.col-xs-2.brand-custom
+                    a.danghoaidanh(href="/") danghoaidanh
+                .col-sm-6.col-xs-6.header-search-custom(style="")
+                    form(role="search" id="navbar-form-custom")
+                        .input-group
+                            input.form-control(type="text" placeholder="search" name="srch-term" id="srch-term")
+                            .input-group-btn
+                                button.btn.btn-default(type="submit")
+                                    i.glyphicon.glyphicon-search
+                .col-sm-2.col-xs-2
+    .row.row-header-half-bottom
+        .col-sm-12.col-xs-12.bottom-half-header
+            .row
+                .col-sm-2.col-xs-2
+                .col-sm-8.col-xs-8.menu-content.padding-right-0
+                    ul(style="float:right")
+                        //li
+                        //    a(href="/") Home
+                        li
+                            a(href="#") Services
+                            ul.dropdown
+                                li: a(href="#") Development
+                                li: a(href="#") Testing
+                                li: a(href="#") Prices
+                                //li: a(href="/english-everyday") EnglishEveryday
+                                li: a(href="/english-everyday") EnglishEveryday
+                        li
+                            a(href="#") Partners
+                            ul.dropdown
+                                //li: a(href="#") IBM
+                                //li: a(href="#") Apple
+                                li: a(href="#") Updating...
+
+                        li
+                            a(href="#") About me
+                            ul.dropdown
+                                li: a(href="/background") Background
+                                li: a(href="/achievement") Achievement
+                                li: a(href="/skills") Skills
+                        li: a(href="#") Contact
+                .col-sm-2.col-xs-2

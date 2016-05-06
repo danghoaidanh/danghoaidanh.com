@@ -1,0 +1,27 @@
+extends ../layout
+
+//include header
+block content
+    .row.row-content(style="margin: 5px 0 5px 0;")
+        .col-sm-12.col-xs-12
+            .row
+                .col-sm-2.col-xs-2
+                .col-sm-8.col-xs-8.padding-bottom-5(style="background:#efe9e7; height:auto; border-radius:5px; text-align:center")
+                    h4 #{post.title}
+                    span.date-style #{moment(post.time).format('LLLL')}
+                    br
+                    //img.img-responsive.imagex.img-thumbnail(src="../../pictures/#{post.picture}")
+                    //br
+                    //div !{post.content}
+                    //br
+                    - if(post.picture1)
+                        img.img-responsive.imagex.img-thumbnail(src="../../pictures/#{post.picture1}")
+                    - if(post.picture2)
+                        img.img-responsive.imagex.img-thumbnail(src="../../pictures/#{post.picture2}")
+                    - if(post.picture3)
+                        img.img-responsive.imagex.img-thumbnail(src="../../pictures/#{post.picture3}")
+                    - if(post.picture4)
+                        img.img-responsive.imagex.img-thumbnail(src="../../pictures/#{post.picture4}")
+                    br
+                    a(href="/english-everyday") Back
+                .col-sm-2.col-xs-2
