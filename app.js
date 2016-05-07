@@ -36,8 +36,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/pictures/', express.static(__dirname + '/public/upload/'));
 
 //connect to mongo
-mongoose.connect('mongodb://localhost/test');
 
+//mongoose.connect('mongodb://localhost/test');
+    mongoose.connect('mongodb://heroku_ch8w58s3:qjt30n74d3433lhce5k6qdda36@ds017432.mlab.com:17432/heroku_ch8w58s3');
 //initial coonection object to test
 var dbMongo = mongoose.connection;
 
