@@ -32,4 +32,20 @@ router.get('/english-everyday', function (req, res, next) {
   res.render('english-everyday', {title: 'English Everyday'});
 });
 
+//get link products
+router.get('/products', function (req, res, next) {
+  res.render('403', {title: 'Products'});
+});
+
+
+//get link nofbaf.com
+router.get('/nofbaf', function (req, res, next) {
+  res.render('403', {title: 'www.nofbaf.com'});
+});
+
+//get link iosapps
+router.get('/iosapps', function (req, res, next) {
+  res.render('403', {title: 'iOS Apps'});
+});
+
 module.exports = router;
